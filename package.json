@@ -1,0 +1,22 @@
+{
+  "name": "tishal-et-dudu-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "server"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev:server": "npm run dev -w server",
+    "dev:web": "npm run dev -w @tishal-et-dudu/web",
+    "dev:mobile": "npm run dev -w @tishal-et-dudu/mobile",
+    "dev": "npm run dev:server",
+    "build:server": "npm run build -w server",
+    "build:web": "npm run build -w @tishal-et-dudu/web"
+  }
+}
+
+

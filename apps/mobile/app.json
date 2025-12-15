@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "תשאל את דודו",
+    "slug": "tishal-et-dudu",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "platforms": ["ios", "android", "web"],
+    "sdkVersion": "52.0.0"
+  }
+}
+
+

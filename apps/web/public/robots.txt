@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap will be set dynamically based on domain
+# For production, update this to your actual domain
+# Sitemap: https://your-domain.com/sitemap.xml
+
+
