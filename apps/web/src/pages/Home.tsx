@@ -34,8 +34,8 @@ export function HomePage() {
           sx={{
             borderRadius: 2,
             bgcolor: 'background.paper',
-            borderColor: 'primary.main',
-            borderWidth: 1.5,
+            borderColor: '#E2E8F0',
+            borderWidth: 1,
           }}
         >
           <CardContent sx={{ p: { xs: 2, sm: 2.5 } }}>
@@ -54,13 +54,20 @@ export function HomePage() {
               <Typography
                 variant="h5"
                 component="h1"
+                className="brand-title"
                 sx={{
-                  fontWeight: 950,
+                  fontFamily: "'Inter', 'Rubik', system-ui, -apple-system, sans-serif",
+                  fontWeight: 900,
                   lineHeight: 1.2,
-                  letterSpacing: -0.3,
+                  letterSpacing: { xs: -0.4, sm: -0.6 },
                   textAlign: { xs: 'center', md: 'right' },
                   color: 'primary.main',
-                  fontSize: { xs: 20, sm: 24 },
+                  fontSize: { xs: 22, sm: 28 },
+                  background: 'linear-gradient(135deg, #2563EB 0%, #3B82F6 50%, #60A5FA 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                  textShadow: '0 2px 12px rgba(37, 99, 235, 0.15)',
                 }}
               >
                 תשאל את דודו
@@ -75,33 +82,9 @@ export function HomePage() {
                   textAlign: { xs: 'center', md: 'right' },
                 }}
               >
-                האתר הרשמי של דודו, ניקוי ושדרוג של מוצרים יד שנייה, ומביא לכם פריטים באיכות גבוהה, עם תמונות אמיתיות,
-                תיאור ברור ואפילו דילים מיוחדים מפעם לפעם.
+                האתר הרשמי של דודו. זה לא אתר רווחי – זה לטובת אנשים שאין להם. אני קונה אוסף מוצרים יד שנייה, מנקה ומשפץ אותם, ומוכר אותם במחירים זולים כדי לעזור למי שצריך.
               </Typography>
 
-              <Box
-                sx={{
-                  mt: 0.5,
-                  p: { xs: 1.5, sm: 2 },
-                  borderRadius: 1.5,
-                  bgcolor: 'rgba(37, 99, 235, 0.05)',
-                  border: '1px solid rgba(37, 99, 235, 0.15)',
-                  width: '100%',
-                  maxWidth: { xs: '100%', sm: 600 },
-                }}
-              >
-                <Typography
-                  sx={{
-                    fontSize: { xs: 11, sm: 12 },
-                    color: 'text.secondary',
-                    lineHeight: 1.7,
-                    textAlign: { xs: 'center', md: 'right' },
-                  }}
-                >
-                  <strong>מחירים זולים לכל כיס</strong> – דודו מתחייב למחירים הזולים ביותר. זה אדם שאוסף דברים ומוכר
-                  אותם כמעט ללא רווח. כל מוצר – מוכן לשימוש, אמין ומחודש.
-                </Typography>
-              </Box>
             </Stack>
           </CardContent>
         </Card>

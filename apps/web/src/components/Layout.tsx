@@ -88,13 +88,25 @@ export function Layout() {
                 component={Link}
                 to="/"
                 variant="h6"
+                className="brand-title"
                 sx={{
-                  fontWeight: 950,
+                  fontFamily: "'Inter', 'Rubik', system-ui, -apple-system, sans-serif",
+                  fontWeight: 900,
                   textDecoration: 'none',
-                  color: 'inherit',
+                  color: '#FFFFFF',
                   whiteSpace: 'nowrap',
-                  letterSpacing: 0.4,
-                  fontSize: { xs: 16, sm: 20 },
+                  letterSpacing: { xs: -0.3, sm: -0.5 },
+                  fontSize: { xs: 17, sm: 22 },
+                  background: 'linear-gradient(135deg, #FFFFFF 0%, #E0E7FF 50%, #FFFFFF 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                  textShadow: '0 2px 8px rgba(255, 255, 255, 0.2)',
+                  transition: 'all 0.3s ease',
+                  '&:hover': {
+                    transform: 'scale(1.05)',
+                    filter: 'brightness(1.1)',
+                  },
                 }}
               >
                 Tishal Et Dudu
@@ -183,11 +195,19 @@ export function Layout() {
           <Stack gap={{ xs: 1, sm: 1.5 }} alignItems="center">
             {/* שם האתר באמצע */}
             <Typography
+              className="brand-title"
               sx={{
-                fontWeight: 950,
-                fontSize: { xs: 18, sm: 20 },
+                fontFamily: "'Inter', 'Rubik', system-ui, -apple-system, sans-serif",
+                fontWeight: 900,
+                fontSize: { xs: 19, sm: 22 },
                 color: '#FFFFFF',
                 textAlign: 'center',
+                background: 'linear-gradient(135deg, #FFFFFF 0%, #E0E7FF 50%, #FFFFFF 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+                textShadow: '0 2px 8px rgba(255, 255, 255, 0.2)',
+                letterSpacing: -0.3,
               }}
             >
               תשאל את דודו

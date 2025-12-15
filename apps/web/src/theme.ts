@@ -19,10 +19,10 @@ export function createAppTheme() {
     },
     shape: { borderRadius: tokens.radius.card },
     typography: {
-      fontFamily: 'system-ui, -apple-system, Segoe UI, Arial',
-      h3: { fontWeight: 950, letterSpacing: -0.6 },
-      h5: { fontWeight: 900, letterSpacing: -0.2 },
-      h6: { fontWeight: 900, letterSpacing: -0.2 },
+      fontFamily: "'Inter', 'Rubik', system-ui, -apple-system, Segoe UI, Arial",
+      h3: { fontWeight: 950, letterSpacing: -0.6, fontFamily: "'Inter', 'Rubik', system-ui, -apple-system, sans-serif" },
+      h5: { fontWeight: 900, letterSpacing: -0.2, fontFamily: "'Inter', 'Rubik', system-ui, -apple-system, sans-serif" },
+      h6: { fontWeight: 900, letterSpacing: -0.2, fontFamily: "'Inter', 'Rubik', system-ui, -apple-system, sans-serif" },
       button: { textTransform: 'none', fontWeight: 900 },
     },
     shadows: [
