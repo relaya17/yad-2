@@ -23,17 +23,18 @@ export function WizardFilters({
 
   return (
     <Card variant="outlined" sx={{ borderRadius: 3 }}>
-      <CardContent>
+      <CardContent sx={{ textAlign: { xs: 'center', md: 'right' }, direction: 'rtl' }}>
         <Typography variant="h6" sx={{ fontWeight: 800, mb: 2 }}>
           {t('wizard_title')}
         </Typography>
-        <Stack direction={{ xs: 'column', md: 'row' }} gap={2}>
+        <Stack direction={{ xs: 'column', md: 'row' }} gap={2} alignItems="stretch">
           <TextField
             select
             fullWidth
             label={t('category')}
             value={value.category ?? ''}
             onChange={(e) => onChange({ ...value, category: e.target.value || undefined })}
+            InputProps={{ sx: { textAlign: 'right' } }}
           >
             <MenuItem value="">הכל</MenuItem>
             {categories.map((c) => (
@@ -47,18 +48,21 @@ export function WizardFilters({
             label={t('search')}
             value={value.q ?? ''}
             onChange={(e) => onChange({ ...value, q: e.target.value || undefined })}
+            InputProps={{ sx: { textAlign: 'right' } }}
           />
           <TextField
             type="number"
             label="מינ׳ ₪"
             value={value.minPrice ?? ''}
             onChange={(e) => onChange({ ...value, minPrice: e.target.value ? Number(e.target.value) : undefined })}
+            InputProps={{ sx: { textAlign: 'right' } }}
           />
           <TextField
             type="number"
             label="מקס׳ ₪"
             value={value.maxPrice ?? ''}
             onChange={(e) => onChange({ ...value, maxPrice: e.target.value ? Number(e.target.value) : undefined })}
+            InputProps={{ sx: { textAlign: 'right' } }}
           />
         </Stack>
 
@@ -89,8 +93,8 @@ export function WizardFilters({
           />
         </Box>
 
-        <Stack direction="row" justifyContent="flex-end" sx={{ mt: 2 }}>
-          <Button variant="contained" onClick={onApply}>
+        <Stack direction="row" justifyContent="center" sx={{ mt: 2 }}>
+          <Button variant="contained" onClick={onApply} sx={{ minWidth: 140, fontWeight: 800 }}>
             {t('apply_filters')}
           </Button>
         </Stack>
