@@ -59,44 +59,7 @@ export function WizardFilters({
               },
             }}
           />
-          <TextField
-            type="number"
-            label="מינ׳ ₪"
-            value={value.minPrice ?? ''}
-            onChange={(e) => onChange({ ...value, minPrice: e.target.value ? Number(e.target.value) : undefined })}
-            InputProps={{
-              sx: {
-                '& .MuiInputBase-input': { textAlign: 'right' },
-              },
-            }}
-          />
-          <TextField
-            type="number"
-            label="מקס׳ ₪"
-            value={value.maxPrice ?? ''}
-            onChange={(e) => onChange({ ...value, maxPrice: e.target.value ? Number(e.target.value) : undefined })}
-            InputProps={{
-              sx: {
-                '& .MuiInputBase-input': { textAlign: 'right' },
-              },
-            }}
-          />
         </Stack>
-
-        {options?.pricePresets?.length ? (
-          <Stack direction="row" flexWrap="wrap" gap={1} sx={{ mt: 1.5 }}>
-            {options.pricePresets.map((p) => (
-              <Button
-                key={p.label}
-                size="small"
-                variant={value.maxPrice === p.maxPrice ? 'contained' : 'outlined'}
-                onClick={() => onChange({ ...value, maxPrice: p.maxPrice })}
-              >
-                {p.label}
-              </Button>
-            ))}
-          </Stack>
-        ) : null}
 
         <Box sx={{ mt: 2 }}>
           <FormControlLabel
