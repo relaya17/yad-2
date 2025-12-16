@@ -45,8 +45,8 @@ export function HomePage() {
                 src="/dodo.png.PNG"
                 alt="דודו"
                 sx={{
-                  width: { xs: 210, sm: 280 },
-                  maxWidth: '100%',
+                  width: { xs: '70vw', sm: 320, md: 360 },
+                  maxWidth: 420,
                   height: 'auto',
                   objectFit: 'contain',
                   mb: 0.2,
