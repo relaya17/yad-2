@@ -39,7 +39,7 @@ export function HomePage() {
           }}
         >
           <CardContent sx={{ p: { xs: 1.6, sm: 2.2 } }}>
-            <Stack gap={0.8} alignItems="center" textAlign="center">
+            <Stack gap={0.8} alignItems="center" textAlign={{ xs: 'center', md: 'right' }}>
               <Box
                 component="img"
                 src="/dodo.png.PNG"
@@ -62,7 +62,7 @@ export function HomePage() {
                   fontWeight: 900,
                   lineHeight: 1.2,
                   letterSpacing: { xs: -0.4, sm: -0.6 },
-                  textAlign: 'center',
+                  textAlign: { xs: 'center', md: 'right' },
                   color: 'primary.main',
                   fontSize: { xs: 22, sm: 28 },
                   background: 'linear-gradient(135deg, #2563EB 0%, #3B82F6 50%, #60A5FA 100%)',
@@ -81,7 +81,7 @@ export function HomePage() {
                   maxWidth: { xs: '100%', sm: 700 },
                   color: 'text.secondary',
                   lineHeight: 1.8,
-                  textAlign: 'center',
+                  textAlign: { xs: 'center', md: 'right' },
                   mb: 2,
                 }}
               >
@@ -104,7 +104,7 @@ export function HomePage() {
                   maxWidth: { xs: '100%', sm: 620 },
                   color: 'text.secondary',
                   lineHeight: 1.7,
-                  textAlign: 'center',
+                  textAlign: { xs: 'center', md: 'right' },
                 }}
               >
                 באתר תמצאו גם מוצרים למסירה ללא תשלום למי שזקוק לעזרה, לצד מוצרים משופצים במחירים נגישים מאוד.

@@ -12,11 +12,13 @@ export function WizardFilters({
   onChange,
   onApply,
   options,
+  showPriceNote,
 }: {
   value: ListingsQuery;
   onChange: (next: ListingsQuery) => void;
   onApply: () => void;
   options?: WizardOptions;
+  showPriceNote?: boolean;
 }) {
   const { t } = useTranslation();
   const categories = options?.categories ?? ['ריהוט', 'אלקטרוניקה', 'בגדים', 'מוצרים נוספים'];
@@ -24,9 +26,14 @@ export function WizardFilters({
   return (
     <Card variant="outlined" sx={{ borderRadius: 3 }}>
       <CardContent sx={{ textAlign: { xs: 'center', md: 'right' }, direction: 'rtl' }}>
-        <Typography variant="h6" sx={{ fontWeight: 800, mb: 2 }}>
-          סינון מוצרים ומסירה
+        <Typography variant="h6" sx={{ fontWeight: 800, mb: 0.5 }}>
+          סינון מוצרים
         </Typography>
+        {showPriceNote && (
+          <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
+            חשוב לדעת: המחירים למכירה הם מינימליים, האתר אינו למטרת רווח.
+          </Typography>
+        )}
         <Stack direction={{ xs: 'column', md: 'row' }} gap={2} alignItems="stretch">
           <TextField
             select

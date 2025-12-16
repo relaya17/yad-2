@@ -40,7 +40,7 @@ export function DealsPage() {
       />
 
       <Stack gap={2.5} component="section" aria-label="תוצאות חיפוש דילים">
-        <WizardFilters value={query} onChange={setQuery} onApply={load} options={wizardOptions} />
+        <WizardFilters value={query} onChange={setQuery} onApply={load} options={wizardOptions} showPriceNote={true} />
 
         <Typography
           variant="subtitle1"

@@ -42,16 +42,31 @@ export function FreePage() {
 
       <Stack gap={2.5} component="section" aria-label="מוצרים למסירה">
         <Stack
-          gap={0.5}
+          gap={1}
           alignItems="center"
           justifyContent="center"
-          sx={{ textAlign: 'center', direction: 'rtl' }}
+          sx={{ textAlign: 'center', direction: 'rtl', mb: 1 }}
         >
-          <Typography variant="h6" sx={{ fontWeight: 900, display: 'flex', alignItems: 'center', gap: 0.5 }}>
+          <Typography variant="h5" sx={{ fontWeight: 800, color: 'primary.main' }}>
             🤗 מסירה באהבה
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            משביע כל חי רצון – ידיים פתוחות לתת באהבה.
+          <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>
+            חפצים עם אהבה
+          </Typography>
+          <Typography variant="body2" color="text.secondary" sx={{ fontWeight: 500 }}>
+            אני מסרתי – עכשיו תורך לחייך
+          </Typography>
+          <Typography
+            variant="subtitle2"
+            sx={{
+              fontFamily: "'Inter', 'Rubik', system-ui, -apple-system, sans-serif",
+              fontWeight: 900,
+              letterSpacing: 0.4,
+              color: 'primary.main',
+              mt: 0.5,
+            }}
+          >
+            ופתח את ידו משביע כל חי רצון
           </Typography>
         </Stack>
 
