@@ -26,7 +26,7 @@ export function Seo({
     '@type': 'WebSite',
     name: SITE_NAME,
     url: SITE_URL,
-    description: 'האתר הרשמי של דודו באילת. דודו מתמחה בשיפוץ, ניקוי ושדרוג של מוצרים יד שנייה.',
+    description: 'תשאל את דודו – אתר יד שנייה ללא מטרות רווח. מוצרים משופצים במחירים זולים, מסירת מוצרים לנזקקים, ריהוט, מוצרי חשמל, חפצי בית. יוזמה חברתית עם לב גדול.',
     inLanguage: 'he-IL',
     potentialAction: {
       '@type': 'SearchAction',
@@ -64,7 +64,7 @@ export function Seo({
       {/* Additional SEO */}
       <meta name="robots" content="index,follow" />
       <meta name="author" content={SITE_NAME} />
-      <meta name="keywords" content="יד שנייה, אילת, דילים, מוצרים משופצים, דודו, תשאל את דודו, פרסום מודעות, מכירה" />
+      <meta name="keywords" content="יד שנייה, מוצרים משופצים, מחירים זולים, מסירת מוצרים לנזקקים, ריהוט, מוצרי חשמל, חפצי בית, יוזמה חברתית, ללא מטרות רווח, תשאל את דודו, דודו, אילת" />
       <meta name="language" content="Hebrew" />
       <meta name="geo.region" content="IL" />
       <meta name="geo.placename" content="אילת" />

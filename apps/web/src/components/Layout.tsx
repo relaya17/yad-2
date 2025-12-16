@@ -131,6 +131,15 @@ export function Layout() {
                   onClose={() => setMenuAnchor(null)}
                   MenuListProps={{ 'aria-label': 'ניווט' }}
                 >
+                  <MenuItem component={Link} to="/deals" onClick={() => setMenuAnchor(null)}>
+                    למכירה
+                  </MenuItem>
+                  <MenuItem component={Link} to="/free" onClick={() => setMenuAnchor(null)}>
+                    למסירה
+                  </MenuItem>
+                  <MenuItem component={Link} to="/about" onClick={() => setMenuAnchor(null)}>
+                    אודות
+                  </MenuItem>
                   <MenuItem component={Link} to="/terms" onClick={() => setMenuAnchor(null)}>
                     תנאי שימוש
                   </MenuItem>
@@ -146,14 +155,11 @@ export function Layout() {
                 alignItems="center"
                 sx={{ fontSize: { xs: 12, sm: 14 }, flexWrap: 'wrap' }}
               >
+                <NavItem to="/deals">למכירה</NavItem>
+                <NavItem to="/free">למסירה</NavItem>
+                <NavItem to="/about">אודות</NavItem>
                 <NavItem to="/terms">תנאי שימוש</NavItem>
                 <NavItem to="/privacy">מדיניות פרטיות</NavItem>
-                <MuiLink
-                  href="mailto:contact@tishal-et-dudu.local"
-                  sx={{ ...linkSx, opacity: 0.85, fontSize: { xs: 12, sm: 14 } }}
-                >
-                  מוגבל רק לאילת
-                </MuiLink>
                 <Button
                   component={Link}
                   to="/publish"
@@ -236,10 +242,27 @@ export function Layout() {
                 <Stack gap={0.2} alignItems={{ xs: 'center', sm: 'flex-start' }}>
                   <MuiLink
                     component={Link}
+                    to="/about"
+                    underline="hover"
+                    color="#E5E7EB"
+                    sx={{
+                      fontSize: { xs: 12, sm: 13 },
+                      textAlign: { xs: 'center', sm: 'left' },
+                      '&:hover': { color: '#FFFFFF' },
+                    }}
+                  >
+                    אודות
+                  </MuiLink>
+                  <MuiLink
+                    component={Link}
                     to="/terms"
                     underline="hover"
                     color="#E5E7EB"
-                    sx={{ fontSize: { xs: 12, sm: 13 }, textAlign: { xs: 'center', sm: 'left' }, '&:hover': { color: '#FFFFFF' } }}
+                    sx={{
+                      fontSize: { xs: 12, sm: 13 },
+                      textAlign: { xs: 'center', sm: 'left' },
+                      '&:hover': { color: '#FFFFFF' },
+                    }}
                   >
                     תנאי שימוש
                   </MuiLink>
@@ -248,7 +271,11 @@ export function Layout() {
                     to="/privacy"
                     underline="hover"
                     color="#E5E7EB"
-                    sx={{ fontSize: { xs: 12, sm: 13 }, textAlign: { xs: 'center', sm: 'left' }, '&:hover': { color: '#FFFFFF' } }}
+                    sx={{
+                      fontSize: { xs: 12, sm: 13 },
+                      textAlign: { xs: 'center', sm: 'left' },
+                      '&:hover': { color: '#FFFFFF' },
+                    }}
                   >
                     מדיניות פרטיות
                   </MuiLink>

@@ -22,8 +22,8 @@ export function HomePage() {
   return (
     <>
       <Seo
-        title="תשאל את דודו | דודו משפץ ומוכר יד 2 באילת"
-        description="האתר הרשמי של דודו, ניקוי ושדרוג של מוצרים יד שנייה. מחירים זולים לכל כיס – דודו מתחייב למחירים הזולים ביותר. זה אדם שאוסף דברים ומוכר אותם כמעט ללא רווח."
+        title="תשאל את דודו – יד שנייה עם לב חברתי"
+        description="אתר תשאל את דודו מציע: מוצרי יד שנייה משופצים, מחירים זולים ונגישים, מסירת מוצרים לנזקקים, ריהוט, מוצרי חשמל, חפצי בית ועוד. יוזמה חברתית ללא מטרות רווח."
         canonicalPath="/"
       />
 
@@ -45,7 +45,8 @@ export function HomePage() {
                 src="/dodo.png.PNG"
                 alt="דודו"
                 sx={{
-                  width: { xs: 120, sm: 150 },
+                  width: { xs: 210, sm: 280 },
+                  maxWidth: '100%',
                   height: 'auto',
                   objectFit: 'contain',
                   mb: 0.5,
@@ -75,15 +76,56 @@ export function HomePage() {
 
               <Typography
                 sx={{
+                  fontSize: { xs: 13, sm: 14 },
+                  maxWidth: { xs: '100%', sm: 700 },
+                  color: 'text.secondary',
+                  lineHeight: 1.8,
+                  textAlign: { xs: 'center', md: 'right' },
+                  mb: 2,
+                }}
+              >
+                ברוכים הבאים ל־תשאל את דודו –<br />
+                המקום שבו יד שנייה פוגשת שליחות חברתית.
+                <br /><br />
+                כאן תמצאו מוצרים יד שנייה שנבחרו בקפידה,<br />
+                עברו ניקוי, תיקון ושדרוג –<br />
+                ונמכרים במחירים נגישים במיוחד, מתוך מטרה אחת ברורה:<br />
+                לאפשר לכל אחד ואחת לחיות בכבוד.
+                <br /><br />
+                זה לא אתר רווחי.<br />
+                זו יוזמה אישית עם לב גדול, שנועדה לעזור למי שצריך –<br />
+                משפחות, צעירים, מבוגרים, וכל מי שמחפש פתרון הוגן ואנושי.
+              </Typography>
+
+              <Typography
+                sx={{
                   fontSize: { xs: 12, sm: 13 },
-                  maxWidth: { xs: '100%', sm: 600 },
+                  maxWidth: { xs: '100%', sm: 620 },
                   color: 'text.secondary',
                   lineHeight: 1.7,
                   textAlign: { xs: 'center', md: 'right' },
                 }}
               >
-                האתר הרשמי של דודו. זה לא אתר רווחי – זה לטובת אנשים שאין להם. אני קונה אוסף מוצרים יד שנייה, מנקה ומשפץ אותם, ומוכר אותם במחירים זולים כדי לעזור למי שצריך.
+                באתר תמצאו גם מוצרים למסירה ללא תשלום למי שזקוק לעזרה, לצד מוצרים משופצים במחירים נגישים מאוד.
               </Typography>
+
+              <Stack
+                direction={{ xs: 'column', sm: 'row' }}
+                gap={1}
+                alignItems="center"
+                justifyContent={{ xs: 'center', md: 'flex-start' }}
+                sx={{ mt: 1 }}
+              >
+                <Button
+                  component={Link}
+                  to="/about"
+                  variant="outlined"
+                  size="small"
+                  sx={{ fontSize: 12 }}
+                >
+                  קרא עוד על תשאל את דודו
+                </Button>
+              </Stack>
 
             </Stack>
           </CardContent>
