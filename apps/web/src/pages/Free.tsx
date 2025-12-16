@@ -1,4 +1,5 @@
-import { Grid, Stack, Typography } from '@mui/material';
+import { Button, Grid, Stack, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import type { Listing, ListingsQuery } from '@tishal-et-dudu/shared';
 import { api } from '../api';
@@ -40,6 +41,30 @@ export function FreePage() {
       />
 
       <Stack gap={2.5} component="section" aria-label="מוצרים למסירה">
+        <Stack
+          gap={1}
+          alignItems="center"
+          justifyContent="center"
+          sx={{ textAlign: 'center' }}
+        >
+          <Typography variant="subtitle1" sx={{ fontWeight: 800 }}>
+            פרסום למסירה חינם (כולל תמונות)
+          </Typography>
+          <Typography variant="body2" color="text.secondary" sx={{ maxWidth: 600 }}>
+            העלו תמונות ותיאור קצר – המודעה תתויג אוטומטית כמסירה בלבד.
+          </Typography>
+          <Button
+            component={Link}
+            to="/publish"
+            variant="contained"
+            color="success"
+            size="small"
+            sx={{ fontWeight: 800 }}
+          >
+            פרסם למסירה עכשיו
+          </Button>
+        </Stack>
+
         <WizardFilters value={query} onChange={setQuery} onApply={load} options={wizardOptions} />
 
         <Typography

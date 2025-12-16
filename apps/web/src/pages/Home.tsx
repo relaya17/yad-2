@@ -39,7 +39,7 @@ export function HomePage() {
           }}
         >
           <CardContent sx={{ p: { xs: 1.6, sm: 2.2 } }}>
-            <Stack gap={0.8} alignItems={{ xs: 'center', md: 'flex-start' }}>
+            <Stack gap={0.8} alignItems="center" textAlign="center">
               <Box
                 component="img"
                 src="/dodo.png.PNG"
@@ -62,7 +62,7 @@ export function HomePage() {
                   fontWeight: 900,
                   lineHeight: 1.2,
                   letterSpacing: { xs: -0.4, sm: -0.6 },
-                  textAlign: { xs: 'center', md: 'right' },
+                  textAlign: 'center',
                   color: 'primary.main',
                   fontSize: { xs: 22, sm: 28 },
                   background: 'linear-gradient(135deg, #2563EB 0%, #3B82F6 50%, #60A5FA 100%)',
@@ -81,7 +81,7 @@ export function HomePage() {
                   maxWidth: { xs: '100%', sm: 700 },
                   color: 'text.secondary',
                   lineHeight: 1.8,
-                  textAlign: { xs: 'center', md: 'right' },
+                  textAlign: 'center',
                   mb: 2,
                 }}
               >
@@ -104,7 +104,7 @@ export function HomePage() {
                   maxWidth: { xs: '100%', sm: 620 },
                   color: 'text.secondary',
                   lineHeight: 1.7,
-                  textAlign: { xs: 'center', md: 'right' },
+                  textAlign: 'center',
                 }}
               >
                 באתר תמצאו גם מוצרים למסירה ללא תשלום למי שזקוק לעזרה, לצד מוצרים משופצים במחירים נגישים מאוד.
@@ -114,7 +114,7 @@ export function HomePage() {
                 direction={{ xs: 'column', sm: 'row' }}
                 gap={1}
                 alignItems="center"
-                justifyContent={{ xs: 'center', md: 'flex-start' }}
+                justifyContent="center"
                 sx={{ mt: 1 }}
               >
                 <Button
@@ -130,15 +130,15 @@ export function HomePage() {
 
               <Stack
                 gap={1}
-                alignItems={{ xs: 'center', md: 'flex-start' }}
-                justifyContent={{ xs: 'center', md: 'flex-start' }}
+                alignItems="center"
+                justifyContent="center"
                 sx={{ mt: 1.2 }}
               >
                 <Typography
                   sx={{
                     fontSize: 12,
                     color: 'text.secondary',
-                    textAlign: { xs: 'center', md: 'right' },
+                    textAlign: 'center',
                   }}
                 >
                   גמח/מסירה באילת – לפרסום חינם בקבוצות:
@@ -147,7 +147,8 @@ export function HomePage() {
                   direction={{ xs: 'column', sm: 'row' }}
                   gap={1}
                   alignItems="center"
-                  justifyContent={{ xs: 'center', md: 'flex-start' }}
+                  justifyContent="center"
+                  sx={{ flexWrap: 'wrap' }}
                 >
                   <Button
                     component="a"
