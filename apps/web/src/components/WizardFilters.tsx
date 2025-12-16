@@ -19,13 +19,13 @@ export function WizardFilters({
   options?: WizardOptions;
 }) {
   const { t } = useTranslation();
-  const categories = options?.categories ?? ['ריהוט', 'רכבים', 'נדל״ן', 'אלקטרוניקה'];
+  const categories = options?.categories ?? ['ריהוט', 'אלקטרוניקה', 'בגדים', 'מוצרים נוספים'];
 
   return (
     <Card variant="outlined" sx={{ borderRadius: 3 }}>
       <CardContent sx={{ textAlign: { xs: 'center', md: 'right' }, direction: 'rtl' }}>
         <Typography variant="h6" sx={{ fontWeight: 800, mb: 2 }}>
-          {t('wizard_title')}
+          סינון מוצרים ומסירה
         </Typography>
         <Stack direction={{ xs: 'column', md: 'row' }} gap={2} alignItems="stretch">
           <TextField
