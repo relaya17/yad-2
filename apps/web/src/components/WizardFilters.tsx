@@ -34,7 +34,12 @@ export function WizardFilters({
             label={t('category')}
             value={value.category ?? ''}
             onChange={(e) => onChange({ ...value, category: e.target.value || undefined })}
-            InputProps={{ sx: { textAlign: 'right' } }}
+            InputProps={{
+              sx: {
+                '& .MuiInputBase-input': { textAlign: 'right' },
+                '& .MuiSelect-select': { textAlign: 'right' },
+              },
+            }}
           >
             <MenuItem value="">הכל</MenuItem>
             {categories.map((c) => (
@@ -48,21 +53,33 @@ export function WizardFilters({
             label={t('search')}
             value={value.q ?? ''}
             onChange={(e) => onChange({ ...value, q: e.target.value || undefined })}
-            InputProps={{ sx: { textAlign: 'right' } }}
+            InputProps={{
+              sx: {
+                '& .MuiInputBase-input': { textAlign: 'right' },
+              },
+            }}
           />
           <TextField
             type="number"
             label="מינ׳ ₪"
             value={value.minPrice ?? ''}
             onChange={(e) => onChange({ ...value, minPrice: e.target.value ? Number(e.target.value) : undefined })}
-            InputProps={{ sx: { textAlign: 'right' } }}
+            InputProps={{
+              sx: {
+                '& .MuiInputBase-input': { textAlign: 'right' },
+              },
+            }}
           />
           <TextField
             type="number"
             label="מקס׳ ₪"
             value={value.maxPrice ?? ''}
             onChange={(e) => onChange({ ...value, maxPrice: e.target.value ? Number(e.target.value) : undefined })}
-            InputProps={{ sx: { textAlign: 'right' } }}
+            InputProps={{
+              sx: {
+                '& .MuiInputBase-input': { textAlign: 'right' },
+              },
+            }}
           />
         </Stack>
 
