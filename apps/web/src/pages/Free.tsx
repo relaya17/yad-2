@@ -41,16 +41,11 @@ export function FreePage() {
       />
 
       <Stack gap={2.5} component="section" aria-label="מוצרים למסירה">
-        <Stack
-          gap={1}
-          alignItems="center"
-          justifyContent="center"
-          sx={{ textAlign: 'center' }}
-        >
-          <Typography variant="subtitle1" sx={{ fontWeight: 800 }}>
+        <Stack gap={1.2} alignItems="center" justifyContent="center" sx={{ textAlign: 'center', mt: 0.5 }}>
+          <Typography variant="subtitle1" sx={{ fontWeight: 900 }}>
             פרסום למסירה חינם (כולל תמונות)
           </Typography>
-          <Typography variant="body2" color="text.secondary" sx={{ maxWidth: 600 }}>
+          <Typography variant="body2" color="text.secondary" sx={{ maxWidth: 640 }}>
             העלו תמונות ותיאור קצר – המודעה תתויג אוטומטית כמסירה בלבד.
           </Typography>
           <Button
@@ -58,8 +53,8 @@ export function FreePage() {
             to="/publish"
             variant="contained"
             color="success"
-            size="small"
-            sx={{ fontWeight: 800 }}
+            size="medium"
+            sx={{ fontWeight: 900, px: 3 }}
           >
             פרסם למסירה עכשיו
           </Button>
