@@ -61,18 +61,6 @@ export function WizardFilters({
           />
         </Stack>
 
-        <Box sx={{ mt: 2 }}>
-          <FormControlLabel
-            control={
-              <Switch
-                checked={Boolean(value.specialOnly)}
-                onChange={(e) => onChange({ ...value, specialOnly: e.target.checked || undefined })}
-              />
-            }
-            label={t('special_deals_only')}
-          />
-        </Box>
-
         <Stack direction="row" justifyContent="center" sx={{ mt: 2 }}>
           <Button variant="contained" onClick={onApply} sx={{ minWidth: 140, fontWeight: 800 }}>
             {t('apply_filters')}

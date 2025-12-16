@@ -41,6 +41,20 @@ export function FreePage() {
       />
 
       <Stack gap={2.5} component="section" aria-label="מוצרים למסירה">
+        <Stack
+          gap={0.5}
+          alignItems="center"
+          justifyContent="center"
+          sx={{ textAlign: 'center', direction: 'rtl' }}
+        >
+          <Typography variant="h6" sx={{ fontWeight: 900, display: 'flex', alignItems: 'center', gap: 0.5 }}>
+            🤗 מסירה באהבה
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            משביע כל חי רצון – ידיים פתוחות לתת באהבה.
+          </Typography>
+        </Stack>
+
         <WizardFilters value={query} onChange={setQuery} onApply={load} options={wizardOptions} />
 
         <Typography
