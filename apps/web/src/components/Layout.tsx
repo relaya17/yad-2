@@ -187,7 +187,7 @@ export function Layout() {
         component="main"
         maxWidth="lg"
         sx={{
-          pt: isHome ? { xs: 0.5, sm: 0.8 } : { xs: 2, sm: 3 },
+          pt: isHome ? { xs: 0, sm: 0.3 } : { xs: 2, sm: 3 },
           pb: { xs: 2, sm: 3 },
           px: { xs: 2, sm: 3 },
         }}
