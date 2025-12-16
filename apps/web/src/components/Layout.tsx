@@ -182,7 +182,16 @@ export function Layout() {
         </Container>
       </AppBar>
 
-      <Container id="main" component="main" maxWidth="lg" sx={{ py: { xs: 2, sm: 3 }, px: { xs: 2, sm: 3 } }}>
+      <Container
+        id="main"
+        component="main"
+        maxWidth="lg"
+        sx={{
+          pt: isHome ? { xs: 0.5, sm: 0.8 } : { xs: 2, sm: 3 },
+          pb: { xs: 2, sm: 3 },
+          px: { xs: 2, sm: 3 },
+        }}
+      >
         <Outlet />
       </Container>
 

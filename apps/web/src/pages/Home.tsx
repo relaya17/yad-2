@@ -27,7 +27,7 @@ export function HomePage() {
         canonicalPath="/"
       />
 
-      <Stack gap={1.5} sx={{ mt: { xs: 0.2, md: 0.4 } }}>
+      <Stack gap={1.3} sx={{ mt: { xs: 0, md: 0.15 } }}>
         {/* Hero Section - קטן וקומפקטי */}
         <Card
           variant="outlined"
