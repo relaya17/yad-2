@@ -316,7 +316,7 @@ export function Layout() {
                 textAlign: 'center',
               }}
             >
-              © {new Date().getFullYear()} תשאל את דודו. relaya
+              © {new Date().getFullYear()} כל הזכויות שמורות ל תשאל את דודו
             </Typography>
           </Stack>
         </Container>
