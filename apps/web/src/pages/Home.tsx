@@ -27,7 +27,7 @@ export function HomePage() {
         canonicalPath="/"
       />
 
-      <Stack gap={2.5} sx={{ mt: { xs: 0.5, md: 1 } }}>
+      <Stack gap={1.5} sx={{ mt: { xs: 0.2, md: 0.4 } }}>
         {/* Hero Section - קטן וקומפקטי */}
         <Card
           variant="outlined"
@@ -39,7 +39,7 @@ export function HomePage() {
           }}
         >
           <CardContent sx={{ p: { xs: 2, sm: 2.5 } }}>
-            <Stack gap={1.5} alignItems={{ xs: 'center', md: 'flex-start' }}>
+            <Stack gap={1} alignItems={{ xs: 'center', md: 'flex-start' }}>
               <Box
                 component="img"
                 src="/dodo.png.PNG"
@@ -49,7 +49,7 @@ export function HomePage() {
                   maxWidth: '100%',
                   height: 'auto',
                   objectFit: 'contain',
-                  mb: 0.5,
+                  mb: 0.2,
                 }}
               />
               <Typography
