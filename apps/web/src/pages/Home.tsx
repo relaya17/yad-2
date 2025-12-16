@@ -128,6 +128,53 @@ export function HomePage() {
                 </Button>
               </Stack>
 
+              <Stack
+                gap={1}
+                alignItems={{ xs: 'center', md: 'flex-start' }}
+                justifyContent={{ xs: 'center', md: 'flex-start' }}
+                sx={{ mt: 1.2 }}
+              >
+                <Typography
+                  sx={{
+                    fontSize: 12,
+                    color: 'text.secondary',
+                    textAlign: { xs: 'center', md: 'right' },
+                  }}
+                >
+                  גמח/מסירה באילת – לפרסום חינם בקבוצות:
+                </Typography>
+                <Stack
+                  direction={{ xs: 'column', sm: 'row' }}
+                  gap={1}
+                  alignItems="center"
+                  justifyContent={{ xs: 'center', md: 'flex-start' }}
+                >
+                  <Button
+                    component="a"
+                    href="https://wa.me/123456789?text=%D7%9E%D7%A1%D7%99%D7%A8%D7%94%20%D7%90%D7%99%D7%9C%D7%AA"
+                    target="_blank"
+                    rel="noreferrer"
+                    variant="contained"
+                    size="small"
+                    color="success"
+                    sx={{ fontSize: 12 }}
+                  >
+                    קבוצת וואטסאפ למסירה
+                  </Button>
+                  <Button
+                    component="a"
+                    href="https://www.facebook.com/groups/placeholder-gmach-eilat"
+                    target="_blank"
+                    rel="noreferrer"
+                    variant="outlined"
+                    size="small"
+                    sx={{ fontSize: 12 }}
+                  >
+                    קבוצת פייסבוק למסירה
+                  </Button>
+                </Stack>
+              </Stack>
+
             </Stack>
           </CardContent>
         </Card>
